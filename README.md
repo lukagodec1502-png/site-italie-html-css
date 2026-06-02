@@ -1,3 +1,5 @@
+<img width="1880" height="863" alt="image" src="https://github.com/user-attachments/assets/cccc798b-17bf-4429-bd4b-a4fc883d4d25" />
+
 # 🍕 Site Vitrine - Découverte de l'Italie
 
 Ce dépôt contient le code source d'un site web vitrine dédié à la culture, l'histoire et au tourisme en Italie. Ce projet collaboratif a été réalisé dans le cadre de ma première année de BUT Informatique à l'IUT de Lannion.
