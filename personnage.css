@@ -1,0 +1,357 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #D0C2AE;
+    font-family: 'Inter', sans-serif;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+h1, h2, h3 {
+    font-family: 'Bodoni Moda', serif;
+}
+
+.barre-logo {
+    background-color: rgba(85, 75, 60, 0.8);
+    height: 60px;
+    width: 100%;
+    position: relative;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+}
+
+.logo-fixe {
+    height: 180px;
+    width: auto;
+    position: absolute;
+    top: -38px;
+    left: 20px;
+    z-index: 100;
+}
+
+.limite-largeur {
+    flex: 1;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.intro-chapeau {
+    font-family: 'Inter', serif;
+    font-size: 1.3rem;
+    font-style: italic;
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #b1937c;
+    border-radius: 10px;
+    color: white;
+}
+
+.intro-duo {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.bloc-image-intro img {
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.bloc-texte-intro {
+    flex: 1;
+    font-family: sans-serif;
+    line-height: 1.8;
+}
+
+.bloc-texte-intro h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.bloc-texte-intro p {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+.section-contenu {
+    margin-bottom: 60px;
+}
+
+.bloc-encadre {
+    background-color: #e0d8ce;
+    padding: 20px;
+    border-radius: 10px;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.bloc-mort {
+    background-color: #b1937c;
+    color: white;
+    text-align: center;
+}
+
+.bloc-mort h3 {
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+}
+
+.titre-rubrique {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.icone-titre {
+    width: 50px;
+    height: 50px;
+    background-color: #e0d8ce;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #777;
+}
+
+.icone-titre img {
+    width: 25px;
+}
+
+.bloc-map {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    background-color: #e0d8ce;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.map-visuel {
+    flex: 1;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.map-visuel img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 5px;
+    border: 1px solid #999;
+    transition: transform 0.4s ease;
+    cursor: pointer;
+}
+
+.map-visuel img:hover {
+    transform: scale(1.2);
+}
+
+.map-texte {
+    flex: 1;
+    font-family: sans-serif;
+    line-height: 1.6;
+}
+
+.grille-cartes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.carte-info {
+    width: 30%;
+    min-width: 200px;
+    background-color: #c9b5a0;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    height: 200px;
+    position: relative;
+}
+
+.carte-info:hover {
+    transform: translateY(-5px);
+}
+
+.carte-contenu {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+}
+
+.carte-titre {
+    font-family: 'Bodoni Moda', serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.carte-texte {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.85rem;
+    line-height: 1.4;
+    color: #000;
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 0.3s ease, max-height 0.3s ease;
+}
+
+.carte-info:hover .carte-texte {
+    opacity: 1;
+    max-height: 300px;
+}
+
+.carte-info:hover .carte-titre {
+    margin-bottom: 15px;
+}
+
+.pied-page {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+    margin-top: 80px;
+    font-family: sans-serif;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.conteneur-pied {
+    width: 100%;
+    padding: 0 50px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.conteneur-pied > div {
+    flex: 1;
+}
+
+.colonne-centre {
+    text-align: center;
+    border-left: 1px solid #666;
+    border-right: 1px solid #666;
+}
+
+.colonne-droite {
+    text-align: right;
+}
+
+.colonne-droite img {
+    width: 25px;
+    margin-left: 15px;
+    vertical-align: middle;
+}
+
+/* Version Mobile */
+
+@media screen and (max-width: 768px) {
+
+    .limite-largeur {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .barre-logo {
+        height: 60px;
+    }
+
+    .logo-fixe {
+        height: 100px;
+        left: 50%;
+        transform: translateX(-50%);
+        top: -20px;
+    }
+
+    .intro-duo {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .bloc-image-intro img {
+        width: 100%;
+        height: auto;
+        max-width: none;
+    }
+
+    .bloc-texte-intro {
+        text-align: left;
+    }
+
+    .bloc-texte-intro h1 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .bloc-map {
+        flex-direction: column;
+    }
+
+    .map-visuel img {
+        width: 100%;
+        max-width: none;
+    }
+
+    .grille-cartes {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .carte-info {
+        width: 100%;
+        height: auto;
+        min-height: auto;
+    }
+
+    .carte-texte {
+        opacity: 1;
+        max-height: 500px;
+        margin-top: 10px;
+    }
+
+    .carte-contenu {
+        padding: 25px 20px;
+    }
+
+    .conteneur-pied {
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+        padding: 0 20px;
+    }
+
+    .colonne-centre {
+        border: none;
+        border-top: 1px solid #666;
+        border-bottom: 1px solid #666;
+        padding: 20px 0;
+    }
+
+    .colonne-droite {
+        text-align: center;
+    }
+}
